@@ -27,37 +27,52 @@
     #Faire un mini-jeu qui affiche un message lorsque input renvoie le bon caractère
     #Le caractère doit être parametrable
 
-def miniJeu(resultLetter): 
-    if resultLetter != input("C'est quoi la lettre khoya ?"):
-        print("C'est perdu")
-        return miniJeu(resultLetter) + 1
-    else :
-        print("C'est gagné")
-        return 1
+#def miniJeu(resultLetter): 
+#    if resultLetter != input("C'est quoi la lettre khoya ?"):
+#        print("C'est perdu")
+#        return miniJeu(resultLetter) + 1
+#    else :
+#        print("C'est gagné")
+#       return 1
     
-print(miniJeu("e"))
+#print(miniJeu("e"))
 
 prenom = "Yoann"
 nom = "Kerlogot"
-identite = nom + " " + prenom  #retourne "Kerlogot Yoann"
+#identite = nom + " " + prenom  #retourne "Kerlogot Yoann"
 
 integerValue = 342 #Retourne 342
 stringIntegerValue = str(342) #Retourne "342"
 
-tableau = [0,10,15,5,1]
+#tableau = [0,10,15,5,1]
 #Pour récupérer 15 je prends dans tableau l'index 2
 
-print(tableau[2]) #Affiche 15
+#print(tableau[2]) #Affiche 15
 
 #Exercice 1
 #Faire une fonction qui concatene 2 chaines de caractères, les séparants par une virgule
+
+def virgule(x, y):
+    motVirgule = x + ", " + y
+    print(motVirgule)
+    return
+
+virgule("Yoann", "Kerlogot")
 
 #Exercice 2
 #Faire une fonction qui itere sur tous les index d'un tableau renvoyant une chaine de caractère avec l'ensemble des occurences d'un chiffre
 #Pour tableau = [0,1,1,1,0,1,1,0,1]
 #la fonction (tableau, 0) doit renvoyer "0, 4, 7" n'hésitez pas à implémenter la première fonction 
+tableau = [0,1,1,1,0,1,1,0,1]
+
+def indexTableau(x):
+    print(tableau[x])
+    
+indexTableau(1)
 
 #Exercice 3
 #Renvoyer/Afficher un message
+
+print("un message")
 
 #FIN
