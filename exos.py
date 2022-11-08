@@ -43,4 +43,13 @@ def salaireParSeconde(salaireHoraire, heuresParJourOuvré, nbDeJoursOuvrésParAn
     return (salaireHoraire * heuresParJourOuvré * nbDeJoursOuvrésParAn) / (60 * 60 * 24 * 365)
 
 print(salaireParSeconde(12, 7, 235))
+
+def SalaireParSeconde(salaireHoraire, heuresParJourOuvré, jourOuvreParAn):
+    #Calculer mon salaire annuel
+    salaireAnnuel = salaireHoraire * heuresParJourOuvré * jourOuvreParAn
+    #Calculer le nombre de seconde dans une année
+    nbSecondeParAn = 365 * 24 * 60 * 60
+    #Je pose et retourne la division
+    return salaireAnnuel / nbSecondeParAn
+    
 #FIN
