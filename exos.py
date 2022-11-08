@@ -59,4 +59,5 @@ print(tableau[2]) #Affiche 15
 
 #Exercice 3
 #Renvoyer/Afficher un message
+
 #FIN
